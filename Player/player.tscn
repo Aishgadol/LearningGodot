@@ -1,156 +1,308 @@
-[gd_scene load_steps=27 format=3 uid="uid://cefny8r2fed5v"]
+[gd_scene load_steps=35 format=3 uid="uid://cefny8r2fed5v"]
 
-[ext_resource type="Texture2D" uid="uid://crea6naj3psjb" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/breath/_0000_Layer-1.png" id="1_d5yj3"]
 [ext_resource type="Script" path="res://Player/player.gd" id="1_fqclx"]
-[ext_resource type="Texture2D" uid="uid://coaxc8psewo3m" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/sunny-dragon/spritesheets/sunny-dragon-fly.png" id="2_34mnw"]
-[ext_resource type="Texture2D" uid="uid://cdi4hosggvk17" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/breath/_0001_Layer-2.png" id="2_fbfxx"]
-[ext_resource type="Texture2D" uid="uid://b3u7t52too68" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/breath/_0002_Layer-3.png" id="3_anwbw"]
-[ext_resource type="Texture2D" uid="uid://c6lioy4gf1t74" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/breath/_0003_Layer-4.png" id="4_6apj1"]
-[ext_resource type="Texture2D" uid="uid://cactjfo3tgphw" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/breath/_0004_Layer-5.png" id="5_3s2no"]
-[ext_resource type="Texture2D" uid="uid://bfrft78p60vb2" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/breath/_0005_Layer-6.png" id="6_tkksq"]
-[ext_resource type="Texture2D" uid="uid://calota2wsrjye" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/breath/_0006_Layer-7.png" id="7_s8nlf"]
-[ext_resource type="Texture2D" uid="uid://7gh35m0uuvvo" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/idle/_0000_Layer-1.png" id="8_w1ahf"]
-[ext_resource type="Texture2D" uid="uid://dsvsd7jgjvp32" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/idle/_0001_Layer-2.png" id="9_1i12o"]
-[ext_resource type="Texture2D" uid="uid://k051l4nmrwge" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/idle/_0002_Layer-3.png" id="10_xd5dy"]
-[ext_resource type="Texture2D" uid="uid://dhfv44h710bqr" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/idle/_0003_Layer-4.png" id="11_pe5gv"]
-[ext_resource type="Texture2D" uid="uid://crowgpfw0l7tv" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/idle/_0004_Layer-5.png" id="12_iogxh"]
-[ext_resource type="Texture2D" uid="uid://dwlmrqnmjn37a" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/idle/_0005_Layer-6.png" id="13_n3ta4"]
+[ext_resource type="Texture2D" uid="uid://dfft7sks72l0r" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/sunny-froggy/Sprites/walking/_0003_Layer-4.png" id="2_t3gq4"]
+[ext_resource type="Texture2D" uid="uid://dy51ll45ijr5i" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/sunny-froggy/Sprites/walking/_0008_Layer-9.png" id="3_7iptx"]
+[ext_resource type="Texture2D" uid="uid://bfy3ubs5ifyyh" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/sunny-froggy/Spritesheets/sunny-froggy-jump.png" id="4_ca87k"]
+[ext_resource type="Texture2D" uid="uid://d2oyvobmqeqfq" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/sunny-froggy/Spritesheets/sunny-froggy-taunting.png" id="5_jn2mh"]
+[ext_resource type="Texture2D" uid="uid://b7451bqrhi5rp" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/sunny-froggy/Spritesheets/sunny-froggy-walk.png" id="6_8513m"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uhult"]
-radius = 59.0
-height = 160.0
+radius = 25.0
+height = 50.0
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_fynnh"]
-atlas = ExtResource("2_34mnw")
-region = Rect2(0, 0, 192, 176)
+[sub_resource type="AtlasTexture" id="AtlasTexture_uw7fp"]
+atlas = ExtResource("4_ca87k")
+region = Rect2(0, 0, 192, 80)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_65bqc"]
-atlas = ExtResource("2_34mnw")
-region = Rect2(192, 0, 192, 176)
+[sub_resource type="AtlasTexture" id="AtlasTexture_c84jq"]
+atlas = ExtResource("4_ca87k")
+region = Rect2(192, 0, 192, 80)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_re7el"]
-atlas = ExtResource("2_34mnw")
-region = Rect2(384, 0, 192, 176)
+[sub_resource type="AtlasTexture" id="AtlasTexture_w0k5o"]
+atlas = ExtResource("4_ca87k")
+region = Rect2(384, 0, 192, 80)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_36eph"]
-atlas = ExtResource("2_34mnw")
-region = Rect2(576, 0, 192, 176)
+[sub_resource type="AtlasTexture" id="AtlasTexture_w75u1"]
+atlas = ExtResource("4_ca87k")
+region = Rect2(576, 0, 192, 80)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jomsd"]
-atlas = ExtResource("2_34mnw")
-region = Rect2(768, 0, 192, 176)
+[sub_resource type="AtlasTexture" id="AtlasTexture_lfc3f"]
+atlas = ExtResource("4_ca87k")
+region = Rect2(768, 0, 192, 80)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_t8jpr"]
-atlas = ExtResource("2_34mnw")
-region = Rect2(960, 0, 192, 176)
+[sub_resource type="AtlasTexture" id="AtlasTexture_m8s8n"]
+atlas = ExtResource("4_ca87k")
+region = Rect2(960, 0, 192, 80)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ic5dq"]
-atlas = ExtResource("2_34mnw")
-region = Rect2(1152, 0, 192, 176)
+[sub_resource type="AtlasTexture" id="AtlasTexture_xyysv"]
+atlas = ExtResource("4_ca87k")
+region = Rect2(1152, 0, 192, 80)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_sojqm"]
-atlas = ExtResource("2_34mnw")
-region = Rect2(1344, 0, 192, 176)
+[sub_resource type="AtlasTexture" id="AtlasTexture_nr0do"]
+atlas = ExtResource("5_jn2mh")
+region = Rect2(0, 0, 53, 42)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1d00l"]
-atlas = ExtResource("2_34mnw")
-region = Rect2(1536, 0, 192, 176)
+[sub_resource type="AtlasTexture" id="AtlasTexture_g8pme"]
+atlas = ExtResource("5_jn2mh")
+region = Rect2(53, 0, 53, 42)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_kgip6"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_sl7ah"]
+atlas = ExtResource("5_jn2mh")
+region = Rect2(106, 0, 53, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yqbpr"]
+atlas = ExtResource("5_jn2mh")
+region = Rect2(159, 0, 53, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0n4fu"]
+atlas = ExtResource("6_8513m")
+region = Rect2(0, 0, 42, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_djxuq"]
+atlas = ExtResource("6_8513m")
+region = Rect2(42, 0, 42, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x7rlf"]
+atlas = ExtResource("6_8513m")
+region = Rect2(84, 0, 42, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1bt58"]
+atlas = ExtResource("6_8513m")
+region = Rect2(126, 0, 42, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yrcah"]
+atlas = ExtResource("6_8513m")
+region = Rect2(168, 0, 42, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8luvf"]
+atlas = ExtResource("6_8513m")
+region = Rect2(210, 0, 42, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2m04d"]
+atlas = ExtResource("6_8513m")
+region = Rect2(252, 0, 42, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_afq45"]
+atlas = ExtResource("6_8513m")
+region = Rect2(294, 0, 42, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sudsw"]
+atlas = ExtResource("6_8513m")
+region = Rect2(336, 0, 42, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ymn6w"]
+atlas = ExtResource("6_8513m")
+region = Rect2(378, 0, 42, 38)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2t23q"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_fynnh")
+"texture": ExtResource("2_t3gq4")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_65bqc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_re7el")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_36eph")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jomsd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_t8jpr")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ic5dq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_sojqm")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1d00l")
+"texture": ExtResource("3_7iptx")
 }],
 "loop": true,
-"name": &"BFLY",
-"speed": 8.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("1_d5yj3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_fbfxx")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_anwbw")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_6apj1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_3s2no")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_tkksq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_s8nlf")
-}],
-"loop": true,
-"name": &"BREATH",
+"name": &"idle",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("9_1i12o")
+"texture": SubResource("AtlasTexture_uw7fp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_xd5dy")
+"texture": SubResource("AtlasTexture_c84jq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_w1ahf")
+"texture": SubResource("AtlasTexture_w0k5o")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_pe5gv")
+"texture": SubResource("AtlasTexture_w75u1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_iogxh")
+"texture": SubResource("AtlasTexture_lfc3f")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_n3ta4")
+"texture": SubResource("AtlasTexture_m8s8n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xyysv")
 }],
 "loop": true,
-"name": &"IDLE",
+"name": &"jumping",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nr0do")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g8pme")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sl7ah")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yqbpr")
+}],
+"loop": true,
+"name": &"taunt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0n4fu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_djxuq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x7rlf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1bt58")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yrcah")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8luvf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2m04d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_afq45")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sudsw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ymn6w")
+}],
+"loop": true,
+"name": &"walking",
 "speed": 5.0
 }]
+
+[sub_resource type="Animation" id="Animation_bq42n"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"idle"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 1,
+"values": []
+}
+
+[sub_resource type="Animation" id="Animation_wtoqa"]
+resource_name = "idle"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.15),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
+[sub_resource type="Animation" id="Animation_1ag75"]
+resource_name = "run"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 1,
+"values": []
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+
+[sub_resource type="Animation" id="Animation_u8u7h"]
+resource_name = "jump"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k1lw3"]
+_data = {
+"RESET": SubResource("Animation_bq42n"),
+"idle": SubResource("Animation_wtoqa"),
+"jump": SubResource("Animation_u8u7h"),
+"run": SubResource("Animation_1ag75")
+}
 
 [node name="player" type="CharacterBody2D"]
 script = ExtResource("1_fqclx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 11)
+position = Vector2(0, -6)
 rotation = 4.71238
 shape = SubResource("CapsuleShape2D_uhult")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(1.13687e-13, 0)
-scale = Vector2(0.899306, 0.84375)
-sprite_frames = SubResource("SpriteFrames_kgip6")
-animation = &"BFLY"
-frame_progress = 0.691307
+sprite_frames = SubResource("SpriteFrames_2t23q")
+animation = &"idle"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.5, 1.5)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_k1lw3")
+}
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+root_node = NodePath("../AnimatedSprite2D")

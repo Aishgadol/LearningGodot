@@ -17,12 +17,17 @@ size = Vector2(1156.25, 58)
 [node name="World" type="Node2D"]
 script = ExtResource("1_gdu0y")
 
+[node name="player" parent="." instance=ExtResource("2_7wwq6")]
+position = Vector2(584, 200)
+scale = Vector2(2, 1.923)
+
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+light_mask = 0
 position = Vector2(584, 656)
 shape = SubResource("RectangleShape2D_ralmm")
-debug_color = Color(0.633685, 0.527765, 0.0196375, 0.42)
+debug_color = Color(0.635294, 0.529412, 0.0196078, 1)
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(-16, 152)
@@ -38,6 +43,22 @@ rotation = -1.57079
 shape = SubResource("RectangleShape2D_c8om6")
 debug_color = Color(0.633685, 0.527765, 0.0196375, 0.42)
 
-[node name="player" parent="." instance=ExtResource("2_7wwq6")]
-position = Vector2(584, 200)
-scale = Vector2(1.04, 1)
+[node name="Panel" type="Panel" parent="."]
+offset_left = -24.0
+offset_top = 624.0
+offset_right = 1176.0
+offset_bottom = 696.0
+
+[node name="Panel2" type="Panel" parent="."]
+offset_left = -48.0
+offset_top = 736.0
+offset_right = 1152.0
+offset_bottom = 808.0
+rotation = -1.57079
+
+[node name="Panel3" type="Panel" parent="."]
+offset_left = 1168.0
+offset_top = 744.0
+offset_right = 2368.0
+offset_bottom = 816.0
+rotation = -1.57079
