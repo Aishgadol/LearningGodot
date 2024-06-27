@@ -39,5 +39,5 @@ shape = SubResource("RectangleShape2D_c8om6")
 debug_color = Color(0.633685, 0.527765, 0.0196375, 0.42)
 
 [node name="player" parent="." instance=ExtResource("2_7wwq6")]
-position = Vector2(624, 496)
-scale = Vector2(3.22548, 3.11592)
+position = Vector2(584, 200)
+scale = Vector2(1.04, 1)
