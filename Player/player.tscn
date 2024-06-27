@@ -1,6 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://cefny8r2fed5v"]
+[gd_scene load_steps=25 format=3 uid="uid://cefny8r2fed5v"]
 
 [ext_resource type="Texture2D" uid="uid://crea6naj3psjb" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/breath/_0000_Layer-1.png" id="1_d5yj3"]
+[ext_resource type="Script" path="res://Player/player.gd" id="1_fqclx"]
 [ext_resource type="Texture2D" uid="uid://cdi4hosggvk17" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/breath/_0001_Layer-2.png" id="2_fbfxx"]
 [ext_resource type="Texture2D" uid="uid://b3u7t52too68" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/breath/_0002_Layer-3.png" id="3_anwbw"]
 [ext_resource type="Texture2D" uid="uid://c6lioy4gf1t74" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/breath/_0003_Layer-4.png" id="4_6apj1"]
@@ -13,8 +14,39 @@
 [ext_resource type="Texture2D" uid="uid://dhfv44h710bqr" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/idle/_0003_Layer-4.png" id="11_pe5gv"]
 [ext_resource type="Texture2D" uid="uid://crowgpfw0l7tv" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/idle/_0004_Layer-5.png" id="12_iogxh"]
 [ext_resource type="Texture2D" uid="uid://dwlmrqnmjn37a" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/idle/_0005_Layer-6.png" id="13_n3ta4"]
+[ext_resource type="Texture2D" uid="uid://duvkh6o0vg5fn" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/flying-bird/spritesheets/flying-creature-cycle-skin.png" id="15_m7lkt"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uhult"]
+radius = 17.0
+height = 70.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uw8sj"]
+atlas = ExtResource("15_m7lkt")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e0mdk"]
+atlas = ExtResource("15_m7lkt")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tg7et"]
+atlas = ExtResource("15_m7lkt")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3725w"]
+atlas = ExtResource("15_m7lkt")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2l8gg"]
+atlas = ExtResource("15_m7lkt")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sqfma"]
+atlas = ExtResource("15_m7lkt")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r3vk3"]
+atlas = ExtResource("15_m7lkt")
+region = Rect2(192, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kgip6"]
 animations = [{
@@ -46,13 +78,13 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("8_w1ahf")
-}, {
-"duration": 1.0,
 "texture": ExtResource("9_1i12o")
 }, {
 "duration": 1.0,
 "texture": ExtResource("10_xd5dy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_w1ahf")
 }, {
 "duration": 1.0,
 "texture": ExtResource("11_pe5gv")
@@ -66,13 +98,44 @@ animations = [{
 "loop": true,
 "name": &"IDLE",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uw8sj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e0mdk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tg7et")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3725w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2l8gg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sqfma")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r3vk3")
+}],
+"loop": true,
+"name": &"turn_to_bird_fly",
+"speed": 5.0
 }]
 
 [node name="player" type="CharacterBody2D"]
+script = ExtResource("1_fqclx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.57079
 shape = SubResource("CapsuleShape2D_uhult")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-22, -10)
+scale = Vector2(0.923611, 0.84375)
 sprite_frames = SubResource("SpriteFrames_kgip6")
-animation = &"BREATH"
+animation = &"IDLE"
+frame_progress = 0.708986
