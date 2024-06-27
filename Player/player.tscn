@@ -1,0 +1,78 @@
+[gd_scene load_steps=16 format=3 uid="uid://cefny8r2fed5v"]
+
+[ext_resource type="Texture2D" uid="uid://crea6naj3psjb" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/breath/_0000_Layer-1.png" id="1_d5yj3"]
+[ext_resource type="Texture2D" uid="uid://cdi4hosggvk17" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/breath/_0001_Layer-2.png" id="2_fbfxx"]
+[ext_resource type="Texture2D" uid="uid://b3u7t52too68" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/breath/_0002_Layer-3.png" id="3_anwbw"]
+[ext_resource type="Texture2D" uid="uid://c6lioy4gf1t74" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/breath/_0003_Layer-4.png" id="4_6apj1"]
+[ext_resource type="Texture2D" uid="uid://cactjfo3tgphw" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/breath/_0004_Layer-5.png" id="5_3s2no"]
+[ext_resource type="Texture2D" uid="uid://bfrft78p60vb2" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/breath/_0005_Layer-6.png" id="6_tkksq"]
+[ext_resource type="Texture2D" uid="uid://calota2wsrjye" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/breath/_0006_Layer-7.png" id="7_s8nlf"]
+[ext_resource type="Texture2D" uid="uid://7gh35m0uuvvo" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/idle/_0000_Layer-1.png" id="8_w1ahf"]
+[ext_resource type="Texture2D" uid="uid://dsvsd7jgjvp32" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/idle/_0001_Layer-2.png" id="9_1i12o"]
+[ext_resource type="Texture2D" uid="uid://k051l4nmrwge" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/idle/_0002_Layer-3.png" id="10_xd5dy"]
+[ext_resource type="Texture2D" uid="uid://dhfv44h710bqr" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/idle/_0003_Layer-4.png" id="11_pe5gv"]
+[ext_resource type="Texture2D" uid="uid://crowgpfw0l7tv" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/idle/_0004_Layer-5.png" id="12_iogxh"]
+[ext_resource type="Texture2D" uid="uid://dwlmrqnmjn37a" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Grotto-escape-2-boss-dragon/sprites/idle/_0005_Layer-6.png" id="13_n3ta4"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uhult"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kgip6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_d5yj3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_fbfxx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_anwbw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_6apj1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_3s2no")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_tkksq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_s8nlf")
+}],
+"loop": true,
+"name": &"BREATH",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_w1ahf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_1i12o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_xd5dy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_pe5gv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_iogxh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_n3ta4")
+}],
+"loop": true,
+"name": &"IDLE",
+"speed": 5.0
+}]
+
+[node name="player" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_uhult")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_kgip6")
+animation = &"BREATH"
