@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbbb0gnpynmv7"]
+
+[ext_resource type="Script" path="res://ParallaxBackground.gd" id="1_l4oe1"]
+[ext_resource type="Texture2D" uid="uid://bvpfm7i7do6qt" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Environments/Rocky Tileset/PNG/layers/rocky-tileset-background.png" id="2_i4nvo"]
+[ext_resource type="Texture2D" uid="uid://b4i1dotmeiwch" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Packs/Sunnyland/environment/Props/tree.png" id="3_ffwjw"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+script = ExtResource("1_l4oe1")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(575, 0)
+
+[node name="Rocky-tileset-background" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(296, 320)
+scale = Vector2(1.7619, 3.33333)
+texture = ExtResource("2_i4nvo")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(575, 0)
+
+[node name="Tree" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(112, 464)
+scale = Vector2(1.96429, 2.41216)
+texture = ExtResource("3_ffwjw")
+
+[node name="Tree2" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(216, 464)
+scale = Vector2(1.96429, 2.41216)
+texture = ExtResource("3_ffwjw")
+
+[node name="Tree3" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(343, 464)
+scale = Vector2(1.96429, 2.41216)
+texture = ExtResource("3_ffwjw")
+
+[node name="Tree4" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(447, 464)
+scale = Vector2(1.96429, 2.41216)
+texture = ExtResource("3_ffwjw")
+
+[node name="Tree5" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(513, 464)
+scale = Vector2(1.96429, 2.41216)
+texture = ExtResource("3_ffwjw")
