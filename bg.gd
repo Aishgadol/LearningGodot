@@ -1,2 +1,0 @@
-extends Node2D
-scroll_offset
